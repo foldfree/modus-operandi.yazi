@@ -13,7 +13,7 @@
 ## 🎨 Installation
 
 ```bash
-ya pack -a foldfree/flexoki-light
+ya pack -a foldfree/modus-operandi
 ```
 
 ## ⚙️ Usage
@@ -22,7 +22,7 @@ Add these lines to your `theme.toml` configuration file to use it:
 
 ```toml
 [flavor]
-use = "flexoki-light"
+light = "modus-operandi"
 ```
 
 ## 📜 License
