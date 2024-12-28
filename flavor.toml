@@ -41,21 +41,27 @@ separator_close = ""
 separator_style = { fg = "#e0e0e0", bg = "#e0e0e0" }
 
 # Mode
-mode_normal = { fg = "#f3f3ff", bg = "#354fcf", bold = true }
-mode_select = { fg = "#ecf7ed", bg = "#316500", bold = true }
-mode_unset  = { fg = "#fff1f0", bg = "#972500", bold = true }
+[mode]
+normal_main = { fg = "#F3F3FF", bg = "#354FCF", bold = true }
+normal_alt  = { bg = "#F3F3FF", fg = "#354FCF" }
+
+select_main = { fg = "#ECF7ED", bg = "#316500", bold = true }
+select_alt = { bg = "#ECF7ED", fg = "#316500" }
+
+unset_main  = { fg = "#FFF1F0", bg = "#972500", bold = true }
+unset_alt = { bg = "#FFF1F0", fg = "#972500" }
 
 # Progress
 progress_label  = { fg = "#000000", bold = true }
-progress_normal = { fg = "#4faa09", bg = "#8fef00" }
+progress_normal = { fg = "#4FAA09", bg = "#8FEF00" }
 progress_error  = { fg = "#fff1f0", bg = "#d00000" }
 
 # Permissions
-permissions_t = { fg = "#4385BE" }
-permissions_r = { fg = "#6f5500" }
-permissions_w = { fg = "#AF3029" }
-permissions_x = { fg = "#66800B" }
-permissions_s = { fg = "#575653" }
+perm_type = { fg = "#4385BE" }
+perm_read = { fg = "#6f5500" }
+perm_write = { fg = "#AF3029" }
+perm_exec = { fg = "#66800B" }
+perm_sep = { fg = "#575653" }
 
 # : }}}
 
@@ -73,7 +79,7 @@ selected = { fg = "#0031a9", bg = "#bfc9ff" }
 
 # : Select {{{
 
-[select]
+[pick]
 border   = { fg = "#6F6E69" }
 active   = { fg = "#800042" }
 inactive = {}
@@ -129,13 +135,7 @@ rules = [
 	{ mime = "audio/*", fg = "#6f5500" },
 
 	# Archives
-	{ mime = "application/zip",             fg = "#800042" },
-	{ mime = "application/gzip",            fg = "#800042" },
-	{ mime = "application/x-tar",           fg = "#800042" },
-	{ mime = "application/x-bzip",          fg = "#800042" },
-	{ mime = "application/x-bzip2",         fg = "#800042" },
-	{ mime = "application/x-7z-compressed", fg = "#800042" },
-	{ mime = "application/x-rar",           fg = "#800042" },
+	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#800042" },
 
 	# Fallback
 	{ name = "*", fg = "#000000" },
