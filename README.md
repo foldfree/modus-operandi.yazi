@@ -3,7 +3,7 @@
 </div>
 
 <h3 align="center">
-    Flexoki Light Flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
+    Modus Operandi Flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
 </h3>
 
 ## 👀 Preview
@@ -13,7 +13,7 @@
 ## 🎨 Installation
 
 ```bash
-ya pack -a foldfree/flexoki-light
+ya pack -a foldfree/modus-operandi
 ```
 
 ## ⚙️ Usage
@@ -22,7 +22,7 @@ Add these lines to your `theme.toml` configuration file to use it:
 
 ```toml
 [flavor]
-use = "flexoki-light"
+use = "modus-operandi"
 ```
 
 ## 📜 License
