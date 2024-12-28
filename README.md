@@ -3,7 +3,7 @@
 </div>
 
 <h3 align="center">
-    Flexoki Light Flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
+    Modus Operandi Flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
 </h3>
 
 ## 👀 Preview
